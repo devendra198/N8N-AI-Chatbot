@@ -1,36 +1,168 @@
-https://www.youtube.com/watch?v=0uHeVYH7ZL8
+# n8n AI Chat with Google Docs
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+An AI-powered chat application built with **Next.js** and **n8n**, connected to **Google Docs** to retrieve and use document content in AI conversations.
 
-## Getting Started
+## 🎥 Watch the Tutorial
 
-First, run the development server:
+[![n8n AI Chat with Google Docs](https://img.youtube.com/vi/0uHeVYH7ZL8/maxresdefault.jpg)](https://www.youtube.com/watch?v=0uHeVYH7ZL8)
+
+**▶️ [Watch the full tutorial on YouTube](https://www.youtube.com/watch?v=0uHeVYH7ZL8)**
+
+## ✨ Features
+
+* 🤖 AI-powered chat interface
+* 🔗 n8n workflow integration
+* 📄 Google Docs integration
+* 💬 Ask questions about Google Docs content
+* ⚡ Next.js frontend
+* 🔄 AI workflow automation
+* 📱 Responsive interface
+
+## 🛠️ Tech Stack
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **n8n**
+* **Google Docs**
+* **AI / LLM**
+* **Tailwind CSS**
+
+## 🏗️ How It Works
+
+```text
+User
+  ↓
+Next.js Chat Interface
+  ↓
+n8n Webhook
+  ↓
+Google Docs
+  ↓
+Document Content
+  ↓
+AI Agent / LLM
+  ↓
+AI Response
+  ↓
+Next.js Chat Interface
+```
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/n8n-ai-chat-google-docs.git
+cd n8n-ai-chat-google-docs
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_N8N_WEBHOOK_URL=your_n8n_webhook_url
+```
+
+Replace `your_n8n_webhook_url` with your n8n webhook URL.
+
+> Never commit API keys, credentials, or other sensitive information to GitHub.
+
+### 4. Configure n8n
+
+Create your n8n workflow with the following flow:
+
+```text
+Webhook
+   ↓
+Receive Chat Message
+   ↓
+Google Docs
+   ↓
+Get Document Content
+   ↓
+AI Agent / LLM
+   ↓
+Generate Response
+   ↓
+Return Response
+```
+
+### 5. Start the application
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+.
+├── app/
+│   ├── page.tsx
+│   ├── layout.tsx
+│   └── ...
+├── components/
+│   └── ...
+├── public/
+│   └── ...
+├── .env.local
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+You can extend this project to support:
 
-## Deploy on Vercel
+* Multiple Google Docs
+* Multiple documents and knowledge sources
+* RAG-based document search
+* Different AI models
+* Custom AI prompts
+* AI agents
+* Additional n8n workflows
+* Other Google Workspace integrations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The Next.js application can be deployed to platforms such as **Vercel**.
+
+Make sure the following environment variable is configured in your production environment:
+
+```env
+NEXT_PUBLIC_N8N_WEBHOOK_URL=your_production_n8n_webhook_url
+```
+
+Your n8n webhook must also be publicly accessible so the deployed application can communicate with it.
+
+## 📚 Resources
+
+* [Next.js Documentation](https://nextjs.org/docs)
+* [n8n Documentation](https://docs.n8n.io/)
+* [Google Docs API](https://developers.google.com/docs/api)
+* [Vercel](https://vercel.com/)
+
+## 🎥 Tutorial
+
+**n8n AI Chat with Google Docs Connection**
+
+https://www.youtube.com/watch?v=0uHeVYH7ZL8
+
+## 📄 License
+
+This project is intended for educational and demonstration purposes.
