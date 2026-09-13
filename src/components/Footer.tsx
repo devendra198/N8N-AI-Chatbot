@@ -11,7 +11,7 @@ import {
   YoutubeIcon,
   ArrowUpIcon,
 } from './Icons';
-
+//htr
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
